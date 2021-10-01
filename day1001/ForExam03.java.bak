@@ -1,0 +1,27 @@
+//for문 연습) ForExam02관련문제
+
+class ForExam03
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("a");
+		System.out.println("b");
+		int i;                        //int가 for문 밖에있네? i가 for문 밖에서 선언됨
+		for(i=1; i<=3; i++){
+			System.out.println(i);
+		}
+            System.out.println("c");
+			System.out.println("i:"+i);
+
+	}
+}
+
+/*출력결과:
+a
+b
+1
+2
+3
+c
+i:4
+*/

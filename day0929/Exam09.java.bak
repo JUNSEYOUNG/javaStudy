@@ -14,6 +14,6 @@ class Exam09
 		b = sc.nextInt();
 
         System.out.println("**작은 수 출력결과**");   //min = (a<b)?a:b;
-		System.out.println((a<b)?a:b);           //("작은 수는"+min+"입니다.");
+		System.out.println((a<b)?a:b);           //("작은 수는"+min+"입니다."); //변수에 넣어서 출력하는 방법
 	}
 }

@@ -12,9 +12,9 @@ class Exam0703
 		int n;
 		System.out.println("0~9사이의 수를 입력하세요.");
 		n = sc.nextInt();                             
-		switch(n){                                     //n에 2입력시 실행결과: 삼
-			case 0:
-			case 1:
+		switch(n){                                     //n에 0입력시 실행결과: 삼 종료 / 4입력시: 칠 종료 / 8입력시: 
+			case 0:                                    //입력범위를 초과했습니다 종료 / 6입력시: 칠 종료  
+			case 1:                                    //출력문이 없으면 출력문이 있는 곳으로 넘어감(break가 없으면 쭉 출력됨)                    
 			case 2:
 			case 3:System.out.println("삼");break;
 			case 4:

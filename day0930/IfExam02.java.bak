@@ -1,4 +1,4 @@
-//if-else문 연습)사용자한테 0~9 사이의 정수를 입력받아서
+//if-else문 연습)사용자한테 0~9 사이의 정수를 입력받아서 
 //한글표기식 출력하는 프로그램 작성
 //<<실행 예>>
 //0~9사이의 수를 입력하시오 ==> 7입력하면 칠 출력
@@ -15,8 +15,8 @@ class IfExam02
 		n = sc.nextInt();
 
 		if(n==0){
-          System.out.println("영");
-		}else if(n==1){
+          System.out.println("영");      //switch문으로 작성하면 더 깔끔하고 빠르겠지?
+		}else if(n==1){                 //아니면 만약
 		  System.out.println("일");
 		}else if(n==2){
 		  System.out.println("이");

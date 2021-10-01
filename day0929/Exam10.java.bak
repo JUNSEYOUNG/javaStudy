@@ -12,7 +12,7 @@ class Exam10
 		n = sc.nextInt();
 
 		System.out.println("**출력결과**");
-		//System.out.println(n+"은" +((n%2==0)?"짝수":"홀수")+"입니다."); //출력문에 한번에 출력
+		//System.out.println(n+"은" +((n%2==0)?"짝수":"홀수")+"입니다."); //출력문에 한번에 출력 //난이게좋아!
 		String result = (n%2==0)?"짝수":"홀수";
 		System.out.println(n+"은"  + result+ "입니다.");  //변수에 넣은 후 출력문에 사용
 	}

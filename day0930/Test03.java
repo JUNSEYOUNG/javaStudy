@@ -21,10 +21,10 @@ class Test03
 		System.out.println("생일을 입력하세요.");
 		day = sc.nextInt();
 
-		if(month<1 || month>12 || day<1 || day>31){
+		if(month<1 || month>12 || day<1 || day>31){  //잘못된 입력값 만들어주기
 			System.out.println("잘못된 입력값입니다.");}
 			else{
-				switch(month){
+				switch(month){    //switch case:출력결과()문, if문(연산자) 사용  
 					case 1: if(day<=19){System.out.println(name +"님의 별자리는 염소자리입니다.");}
 					else {System.out.println(name+"님의 별자리는 물병자리입니다.");}
 						break;

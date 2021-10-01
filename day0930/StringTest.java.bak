@@ -1,3 +1,5 @@
+//문자열 연결 실험
+
 class StringTest 
 {
 	public static void main(String[] args) 
