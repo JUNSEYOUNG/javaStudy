@@ -8,7 +8,7 @@ class ForExam08
 	public static void main(String []args)
 	{
 		Scanner sc = new Scanner(System.in);
-		int n, even_sum=0, odd_sum=0, even_cnt=0, odd_cnt=0;    //Â¦¼ö ÇÕ, È¦¼ö ÇÕ, Â¦¼ö °¹¼ö, È¦¼ö °¹¼ö ¹Þ±âÀ§ÇÑ º¯¼ö¼±¾ð
+		int n, even_sum=0, odd_sum=0, even_cnt=0, odd_cnt=0;    //Â¦¼ö ÇÕ, È¦¼ö ÇÕ, Â¦¼ö °¹¼ö, È¦¼ö°¹¼ö ¹Þ±âÀ§ÇÑ º¯¼ö¼±¾ð
 		System.out.print("nÀ» ÀÔ·ÂÇÏ¼¼¿ä.==>");
 		n = sc.nextInt();
 
