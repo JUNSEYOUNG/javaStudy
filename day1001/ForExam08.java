@@ -17,17 +17,17 @@ class ForExam08
 		//i가 1이면 짝수야 홀수야? 물어보기
 
 		for(int i=1; i<=n; i++){
-			if(i%2==0){
+			if(i%2==0){                                   //i를 2로 나눈 나머지 값이 0이라면! 즉 i가 짝수라면!
 				even_sum += i;//even_sum = even_sum + i;  //짝수를 누적해야 하니까 짝수인 i를 더하는 것
 				even_cnt++; //even_cnt = even_cnt + 1;  //개수 누적해야 하니까 1개씩 더하기
-			}else{
+			}else{                                      //홀수라면?
 				odd_sum += i;
 				odd_cnt++;
 			}
 		}
-		System.out.println("1에서 " +n+ "까지의 짝수의 합"+ even_sum);
-		System.out.println("1에서 " +n+ "까지의 짝수의 개수"+ even_cnt);
-		System.out.println("1에서 " +n+ "까지의 홀수의 합"+ odd_sum);
-		System.out.println("1에서 " +n+ "까지의 홀수의 개수"+ odd_cnt);
+		System.out.println("1에서 " +n+ "까지의 짝수의 합 "+ even_sum);
+		System.out.println("1에서 " +n+ "까지의 짝수의 개수 "+ even_cnt);
+		System.out.println("1에서 " +n+ "까지의 홀수의 합 "+ odd_sum);
+		System.out.println("1에서 " +n+ "까지의 홀수의 개수 "+ odd_cnt);
 	}
 }

@@ -15,8 +15,7 @@ class ForExam06
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		int n;
-		sum = 1;      //곱하기해서 누적해야 하니까 초기값 1주기
+		int n , sum=1;                        //곱하기해서 누적해야 하니까 초기값 1주기(더하기일 때는 0주기)
 		System.out.print("n을 입력하세요==>");
 		n = sc.nextInt();
 
@@ -24,7 +23,7 @@ class ForExam06
 		for(int i=n; i>=1; i--){   //i--는 i=i-1임   //사용자가 n에 뭘 넣던 n부터!
 		sum = sum*i;
 		System.out.print(i);
-		if(i != 1){
+		if(i != 1){                //i가 1이 아니라면
 			System.out.print("*");
 		}
 	}

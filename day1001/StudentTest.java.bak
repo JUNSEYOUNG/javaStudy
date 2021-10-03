@@ -10,7 +10,7 @@ class StudentTest
 		
 		int tot = 0;   //평균나이계산
 		for(int i=0; i<name.length; i++){
-			System.out.println(name[i]+ ":" + age[i]);
+			System.out.println(name[i] + ":" + age[i]);
             tot += age[i];       //반복문 빠져나가기 전에 전체나이의 합 구하기
 		}
 		double avg = (double) tot / age.length;

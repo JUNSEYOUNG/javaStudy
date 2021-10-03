@@ -21,7 +21,7 @@ class Exam02
 		math = sc.nextInt();
 
 		sum = kor + eng + math;
-		double avg;
+		double avg;                     //평균을 실수로 구할거라 위에 int avg안하고 지금 따로 선언함
 		avg = (double)sum/(double)3;
 		//avg = sum/3.0;
 

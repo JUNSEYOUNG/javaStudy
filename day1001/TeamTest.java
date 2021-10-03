@@ -1,4 +1,4 @@
-/*팀별과제) 
+/*팀별과제)                                               //출력결과에 오류있음!정답수: 8개,틀린수: 2개 못맞춤ㅠㅠ
 4지선다형 문항의 답안 10개를 입력받아 답이 옳은지 판별하여
 OX를 출력하고 정답수와 틀린답수를 각각 구하여 출력함
 (단! 정답은 미리 프로그램에서 초기화함)
@@ -26,9 +26,9 @@ class TeamTest
 {
 	public static void main(String[] args) 
 	{
-		int []quiz = {3,1,3,4,1,2,4,2,3,3};
+		int[] quiz = {3,1,3,4,1,2,4,2,3,3};
 		Scanner sc = new Scanner(System.in);
-		int []answer = new int[10];
+		int[] answer = new int[10];
 		int cnt_o = 0, cnt_x = 0;
 		for(int i=0; i<quiz.length; i++){      //배열은 무조건 i가 0부터!
 			System.out.print((i+1)+ "번 답을 입력하세요.==>");
