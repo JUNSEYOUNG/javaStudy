@@ -32,7 +32,7 @@ class StudentTest
 			for(int j=i+1; j<name.length; j++){
 				if(avg[j] > avg[i]){
 					String temp1 = name[i];
-					name[i] = name[i];  //이름바꿔(내림차순)
+					name[i] = name[j];  //이름바꿔(내림차순)
 					name[j] = temp1;
 
 					int temp2 = kor[i];
