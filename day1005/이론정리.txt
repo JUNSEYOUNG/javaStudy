@@ -1,0 +1,38 @@
+[break문, continue문]
+
+break : switch문이나 반복문에서 사용하여 break문이 있는 중괄호를 탈출하는 용도로 사용함
+	즉 완전히 switch를, 완전히 반복문을 벗어나게 됨
+
+continue : 반복문(for)에서만 사용되며 반복문을 벗어나는 것이 아니라
+	   반복문의 다음 조건식 혹은 다음 증감식을 수행하라는 의미임
+
+	   ex)이 코드는 a,b실행하고 1hello 2hello 3 c,d 실행함
+	   i가 3이 되었을 때 조건식을 만족하여 반복문을 탈출함
+
+	   a;
+	   b;
+	   for(int i=1; i<=10; i++){
+		System.out.println(i);
+		if(i%3 == 0)
+			break;
+	   }
+		System.out.println("hello");
+	   }
+	   c;
+	   d;
+
+	   ex)d이 코드는 a,b 1hello, 2hello, 3, 4hello, 5hello, 6, 7hello, 8hello,
+	   9, 10hello, c,d 실행함
+           i가 3의 배수일 때는 반복문 속의 그 다음을 실행하지 않고 다음 증감식을 수행하러 감
+
+	   a;
+	   b;
+	   for(int i=1; i<=10; i++){
+		System.out.println(i);
+		if(i%3 == 0)
+			continue;
+	   }
+		System.out.println("hello");
+	   }
+	   c;
+	   d;

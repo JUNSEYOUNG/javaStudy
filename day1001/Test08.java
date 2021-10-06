@@ -7,15 +7,16 @@ class Test08
 {
 	public static void main(String[] args) 
 	{
-		for(int i=2; i<=100; i++){
-			int k = 0;
-			for(int j=2; j<=i-1; j++){
-				if(i%j==0){
-					k++;       //소수가 아닐경우
+		for(int i=2; i<=100; i++){          //2~100이라는 수가 소수인지 확인하려면 중첩반복문이 필요함
+			int cnt = 0;
+			for(int k=2; k<i; k++){        //i가 소수인지 판별
+				if(i%k==0){                //k가 i의 약수인가요?
+					cnt++;                  //소수가 아닐경우
 				} 
-				if(k==0)
+
+			}
+				if(cnt==0)                //cnt가 0을 유지하고 있으면 그 수는 소수임
 					System.out.print(i + " ");
 			}
 		}
 	}
-}

@@ -17,11 +17,10 @@ class Test07
 			System.out.println("오류입니다.");
 		}else{
 			System.out.println("0과 " +n+ "사이에 있는 3의 배수:");
-		for(i=1; i<=n; i++){
+		for(i=0; i<=n; i++){
 			if(i%3==0) 
-				System.out.println(" " +i);
-		}
-			System.out.println();
+				System.out.print(i+ " ");
+			}
 		}
 	}
 }

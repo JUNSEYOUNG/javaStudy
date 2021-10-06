@@ -11,17 +11,23 @@ class Test02
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		String n = "";
+		/*String n = "";
 		System.out.println("하나의 문자를 입력하세요.(+,-,x,/)");
 		n = sc.next();
 		int a = 0;
 		int b = 0;
+		*/
+		char op;
+		int a,b;
+		System.out.print("연산자를 입력하세요==>");
+		op = sc.next().charAt(0);
+
 		System.out.println("첫번째 숫자를 입력하세요.");
 		a = sc.nextInt();
 		System.out.println("두번째 숫자를 입력하세요.");
 		b = sc.nextInt();
 
-		if(n.equals ("+")){         
+		/*if(n.equals ("+")){         
 			System.out.println("덧셈 결과: " + (a+b));
 		}else if(n.equals ("-")){
 			System.out.println("뺄셈 결과: " + (a-b));
@@ -32,7 +38,27 @@ class Test02
 				System.out.println("분모가 0입니다.");
 			}else{
 			System.out.println("나눗셈 결과: " + (a/b));	
+		*/
+		if(op == '+'){
+			System.out.println(a + "+" +b+ "="+ (a+b));
+		}
+		else if(op == '-'){
+			System.out.println(a + "-" +b+ "="+ (a-b));
+		}
+		else if(op == '*'){
+			System.out.println(a + "*" +b+ "="+ (a*b));
+		}
+		else if(op == '/'){
+			if(b == 0){
+				System.out.println("분모가 0이 될수는 없습니다.");
+			}else{
+			System.out.println(a + "/" +b+ "="+ (a/b));
+			}
+
+		}else{
+			System.out.println("잘못된 연산자입니다.");
+
+
 		}
 		}
 	}	
-}

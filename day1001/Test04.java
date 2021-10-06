@@ -11,17 +11,15 @@ class Test04
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		int cnt, money, price = 100;
+		int cnt, total, price = 100;
 		System.out.println("100원샵입니다. 10개 이상 구입하시면 10% 할인해드립니다.");
 		System.out.print("몇 개 구입하시겠습니까?===> ");
 		cnt = sc.nextInt();
+		total = price * cnt;
 
-		if(cnt<10){
-			money = cnt*price;
-		}else{
-			money = cnt*price;
-			money = (int)(money*0.9);
+		if(cnt>=10){
+			total = (int)(total*0.9);
 		}
-		System.out.println(money+ "원입니다.");
+		System.out.println("전체가격은 " + total + "원입니다.");
 	}
 }

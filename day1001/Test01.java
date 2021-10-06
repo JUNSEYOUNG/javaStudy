@@ -6,7 +6,7 @@ class Test01
 	{
 		int sum = 0;
 		for(int i=1; i<=30; i++)
-			sum = i*i+1;
-		System.out.println(sum);
+			sum = sum + i*i+1;
+		System.out.println("°á°ú:" + sum);
 	}
 }

@@ -10,21 +10,34 @@ class Test03
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		String n = "";
-		System.out.println("문자 하나를 입력하세요. R/T/C");
-		n = sc.next();
-		double w,h;
-		System.out.println("가로 길이를 입력하세요.");
-		w = sc.nextDouble();
-		System.out.println("세로 길이를 입력하세요.");
-		h = sc.nextDouble();
+		char type;
+		double width, height, radius, area;
 
-		if(n.equals ("R")){
-		System.out.println("사각형의 면적: " + (w*h));
-		}else if(n.equals ("T")){
-			System.out.println("삼각형의 면적: " + (w*h)/2);
-		}else if(n.equals ("C")){
-			System.out.println("원의 면적: " + (w*h)*3.14);
+		System.out.print("도형의 종류를 입력하세요. R:사각형, T:삼각형, C:원===>");
+		type = sc.next().charAt(0);
+		if(type == 'R'){
+			System.out.print("사각형의 가로길이를 입력하세요.==>");
+			width = sc.nextDouble();
+			System.out.print("사각형의 세로길이를 입력하세요.==>");
+			height = sc.nextDouble();
+			area = width * height;
+			System.out.print("사각형의 면적은");
+		}else if(type == 'T'){
+			System.out.print("삼각형의 밑변의 길이를 입력하세요.==>");
+			width = sc.nextDouble();
+			System.out.print("삼각형의 높이를 입력하세요.==>");
+			height = sc.nextDouble();
+			area = width * height / 2;
+			System.out.print("삼각형의 면적은");
+		}else if(type == 'C'){
+			System.out.print("원의 반지름의 길이를 입력하세요.==>");
+			radius = sc.nextDouble();
+			area = 3.14 * radius * radius;
+			System.out.print("원의 면적은");
+		}else{
+			System.out.println("도형의 종류를 잘못 선택했습니다.");
+			return; //여기에서 main메소드를 종료합니다.
+		}
+		System.out.println(area + "입니다.");
 	}
-}
 }
