@@ -44,7 +44,7 @@ class TeamTest
 			do{ 
 				System.out.print("생일을 입력하세요 ==>");
 				day = sc.nextInt();
-			}while(day < 1 || day > last[month-1]);  //-1하는 이유: 1월이면 31일이라 인덱스0, 2월이면 28일이라 인덱스1, 3월이면 31일이라 인덱스2
+			}while(day < 1 || day > last[month-1]);  //-1하는 이유: 1월이면 31일이라 인덱스0, 2월이면 28일이라 인덱스1, 3월이면 31일이라 인덱스2??
 
 				
 					switch(month){   
